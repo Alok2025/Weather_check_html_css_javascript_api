@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .contain{
+            width: 27%;
+            height: 95%;
+            background: linear-gradient(rgb(195, 195, 238), rgb(91, 234, 91));
+            border: solid black, 2px;
+            border-radius: 30px;
+            color: #fff;
+            margin: 100px auto 0;     
+            padding: 40px 35px; 
+            text-align: center;    
+        }
+        .search{  
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between ;
+        }
+        .search input{
+            border: 0;
+            outline: 0;
+            background: #ebfffc;
+            color: #555;
+            padding: 2%, 2%;
+            height: 60px;
+            border-radius: 30px;
+            flex: 1;
+            margin-right: 16px;
+            font-size: 22px;
+        }
+        .search button{
+          border: solid black 0.5px;
+          outline: 0;
+          background: #ebfffc;
+          border-radius: 40%;
+          width: 60px;
+          height: 55px;
+          cursor: pointer;  
+          margin-left: -15px;
+          font-size: 37px;
+        }
+
+        
+        .weathericon{
+            width: 50%;
+            height: 40%;
+        outline: 0;
+        border: solid black 1px;
+        border-radius: 30%;
+        margin-top: 10px;
+        }
+        .weather h1{
+            font-size: 80px;
+            font-weight: 500;
+            margin-top: -10px;
+        }
+        .weather h2{
+            font-size: 45px;
+            font-weight: 400;
+            margin-top: -60px;
+        }
+        .details{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0  10px;
+            margin-top: 50px;
+        }
+        .col{
+            display: flex;
+            align-items: center;
+            text-align: left;
+        }
+        .col img{
+            margin-right: 10px;
+        }
+        .humidity, .wind{
+            font-size:28px ;
+            margin-top: -6px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="search">
+            <input type="text" placeholder="Enter City Name" spellcheck="fales">
+            <button>🔍</button>            
+        </div>
+        
+        <div class="weather">
+            <img src="weather 2.jpg"  class="weathericon">
+            <h1 class="temp"> 25°C</h1>
+            <h2 class="city name">Noida</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="humidity.jpg" width="100px" height="100px">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="wind.jpg" width="100px" height="100px">
+                    <div>
+                        <p class="wind">50 km/h</p>
+                        <p>wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
